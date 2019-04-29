@@ -1,0 +1,14 @@
+.card_layout{
+	height: 250px;
+    padding: 20px;
+    margin: 20px;
+}
+
+
+::ng-deep.mat-pseudo-checkbox{
+  display: none !important;
+}
+
+.pull_button{
+	margin-top: -10px;
+}
