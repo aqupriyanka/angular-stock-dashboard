@@ -30,6 +30,9 @@ import { DialogComponent } from './dashboard/dialog/dialog.component';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatStepperModule} from '@angular/material/stepper';
 import {MatInputModule} from '@angular/material/input';
+import { CovalentNotificationsModule } from '@covalent/core/notifications';
+import { CovalentSearchModule } from '@covalent/core/search';
+import { CovalentMenuModule } from '@covalent/core/menu';
 
 @NgModule({
   declarations: [
@@ -59,6 +62,9 @@ import {MatInputModule} from '@angular/material/input';
     CommonModule,
     CovalentLayoutModule,
     CovalentDataTableModule,
+    CovalentNotificationsModule,
+    CovalentSearchModule,
+    CovalentMenuModule,
     ChartsModule,
     FormsModule,
     ReactiveFormsModule,
