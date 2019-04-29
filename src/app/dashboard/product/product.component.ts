@@ -9,8 +9,6 @@ import { DialogComponent } from '../dialog/dialog.component';
 })
 export class ProductComponent implements OnInit {
 
-  screenHeight: number;
-  screenWidth: number;
 
 public news = [
   {
@@ -67,8 +65,6 @@ public news = [
 
 
   constructor(public dialog: MatDialog) { 
-    this.screenHeight = window.innerHeight;
-    this.screenWidth = window.innerWidth;
   }
 
 
