@@ -5,7 +5,7 @@ import {StockComponent} from './dashboard/stock/stock.component';
 
 const routes: Routes = [
   { path: 'stock', component: StockComponent},
-  { path: 'product', component: ProductComponent},
+  { path: 'news', component: ProductComponent},
   { path: '', redirectTo: '/', pathMatch: 'full' }
  
 ];
