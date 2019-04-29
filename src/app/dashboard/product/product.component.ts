@@ -2,10 +2,6 @@ import { Component, OnInit, Inject } from '@angular/core';
 import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material';
 import { DialogComponent } from '../dialog/dialog.component';
 
-export interface DialogData {
-  animal: 'panda' | 'unicorn' | 'lion';
-}
-
 @Component({
   selector: 'app-product',
   templateUrl: './product.component.html',
@@ -13,6 +9,8 @@ export interface DialogData {
 })
 export class ProductComponent implements OnInit {
 
+  screenHeight: number;
+  screenWidth: number;
 
 public news = [
   {
@@ -68,7 +66,10 @@ public news = [
 
 
 
-  constructor(public dialog: MatDialog) { }
+  constructor(public dialog: MatDialog) { 
+    this.screenHeight = window.innerHeight;
+    this.screenWidth = window.innerWidth;
+  }
 
 
 	openDialog(){
@@ -76,9 +77,6 @@ public news = [
 	    hasBackdrop: false,
 	    width: "500px",
 	    height:"550px",
-	      data: {
-        		animal: 'panda'
-      		}
 	    });
 	    }
 
