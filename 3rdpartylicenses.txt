@@ -105,6 +105,8 @@ THE SOFTWARE.
 
 @angular/material/list
 
+@angular/material/menu
+
 @angular/material/progress-bar
 
 @angular/material/progress-spinner
@@ -127,6 +129,12 @@ MIT
 
 @covalent/core
 MIT
+
+@covalent/core/menu
+
+@covalent/core/notifications
+
+@covalent/core/search
 
 chart.js
 MIT
