@@ -22,6 +22,9 @@ $accent: mat-palette($mat-teal, A700, A100, A400);*/
 body,html{
 	margin: 0;
 	height: 100%;
+	box-sizing: border-box;
+    max-width: 1380px;
+    background-color: #303030;
 }
 
 .header-fill-remaining-space {
